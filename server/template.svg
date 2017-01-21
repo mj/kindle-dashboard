@@ -54,7 +54,7 @@
         <text style="text-anchor:middle;" font-size="20px" y="520" x="500">Pascalstr.</text>
         <text style="text-anchor:middle;" font-size="40px" y="570" x="500">{{ driving }} Min.</text>
 
-        <text style="text-anchor: start" font-size="25px" y="322" x="60">{{ waste }} (Mi.)</text>
+        <text style="text-anchor: start" font-size="25px" y="322" x="60">{{ waste }}</text>
 
         <text style="text-anchor: end" font-size="10px" y="790" x="595">Stand: {{ today.time }} Uhr</text>
     </g>
