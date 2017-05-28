@@ -53,11 +53,16 @@ if len(wastes) > 0:
 else:
     waste = 'Diese/kommende Woche keine Abholung.'
 
+if driving is not None:
+    driving = int(math.ceil(int(driving) / 60))
+else:
+    driving = '?'
+
 output = pystache.render(
     output,
     {
         'outside': int(float(outside)),
-        'driving': int(math.ceil(int(driving) / 60)),
+        'driving': driving,
         'today': {
             'day': calendar.day_name[datetime.today().weekday()],
             'date': datetime.today().strftime('%d.%m.'),
